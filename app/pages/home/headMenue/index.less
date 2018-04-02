@@ -1,0 +1,37 @@
+@import "../../../style/theme.less";
+.inline{
+	font-size: 30px;
+	font-weight: 900;
+}
+.game-type{
+	.head-menue{
+		div:nth-child(2){
+			span:nth-child(1){
+				font-size: 24px;
+				margin: 0 10px;
+			}
+			span:nth-child(2){
+				 &:extend(.inline);
+			}
+		}
+		div:nth-child(3){
+			div{
+				padding: 0;
+			}
+			div:nth-child(2){
+				letter-spacing: 20px;
+				span{
+					&:extend(.inline);
+				}
+			}
+		}
+		div:nth-child(4){
+			span{
+				margin: 0 5px;
+			}
+		}
+	}
+}
+.ant-modal-footer{
+		display: none;
+}
